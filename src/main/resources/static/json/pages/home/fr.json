@@ -1,0 +1,355 @@
+{
+  "herroBanner": {
+    "title": "Voyage Dans 9 Destinations Célèbres du Nord-Ouest",
+    "subtitle": "Suggestion de Voyage",
+    "items": [
+      {
+        "title": "Années d’Expérience",
+        "value": 10
+      },
+      {
+        "title": "Clients",
+        "value": 2000
+      },
+      {
+        "title": "Voyages",
+        "value": 500
+      }
+    ],
+    "background": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/17090722.herro-banner-video.mp4"
+  },
+  "about": [
+    {
+      "title": "Entreprise Vietnamienne",
+      "description": "Basée à Hanoï, vous rencontrerez directement les personnes derrière votre voyage – sans intermédiaires, sans frais supplémentaires. Choisir une agence locale signifie un meilleur accompagnement et un retour pour la région que vous explorez.",
+      "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10112633.home-about-1.png"
+    },
+    {
+      "title": "Équipe Toujours Prête",
+      "description": "Les conseillers en voyages et les guides — francophones et forts de plusieurs années d’expérience — associés à une logistique fluide, vous fourniront toutes les ressources nécessaires pour garantir la réussite.",
+      "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10112647.home-about-2.png"
+    },
+    {
+      "title": "Experts Locaux",
+      "description": "Grâce à une connaissance approfondie des destinations et de la culture locales, Vietnam Exploration propose des voyages qui vont au-delà des visites — en vous connectant directement avec la population.",
+      "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10112718.home-about-3.png"
+    }
+  ],
+  "destination": {
+    "title": "Destination des 3 Régions",
+    "items": [
+      {
+        "title": "Nord",
+        "description": "La région la plus au nord sur la carte du Vietnam, avec la capitale Hanoï",
+        "video": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4"
+      },
+      {
+        "title": "Centre",
+        "description": "La région la plus au nord sur la carte du Vietnam, avec la capitale Hanoï",
+        "video": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4"
+      },
+      {
+        "title": "Sud",
+        "description": "La région la plus au nord sur la carte du Vietnam, avec la capitale Hanoï",
+        "video": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+      }
+    ]
+  },
+  "tripsWeHad": [
+    {
+      "title": "Types de Voyages Proposés",
+      "items": [
+        {
+          "title": "Randonnée",
+          "link": "/hiking",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085815.trip-1.jpg"
+        },
+        {
+          "title": "Moto",
+          "link": "/motorbike",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085808.trip-2.jpg"
+        },
+        {
+          "title": "Rencontrer les Habitants",
+          "link": "/meet-locals",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085748.trip-3.png"
+        },
+        {
+          "title": "Voiture",
+          "link": "/car",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085812.trip-4.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Suggestions",
+      "items": [
+        {
+          "title": "Randonnée",
+          "link": "/hiking",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085815.trip-1.jpg"
+        },
+        {
+          "title": "Rencontrer les Habitants",
+          "link": "/meet-locals",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085748.trip-3.png"
+        }
+      ]
+    },
+    {
+      "title": "Voyage Combiné",
+      "items": [
+        {
+          "title": "Moto",
+          "link": "/motorbike",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085808.trip-2.jpg"
+        }
+      ]
+    }
+  ],
+  "testimonial": {
+    "title": "Customer Feedback",
+    "items": [
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Ce voyage a été vraiment inoubliable. Des sommets de Ta Xua couverts de nuages aux marchés locaux animés, j’ai découvert des paysages magnifiques et des habitants accueillants. Chaque lieu a apporté des souvenirs uniques, un parcours riche de sens avec Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexique",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      }
+    ]
+  }
+}

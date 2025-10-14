@@ -1,0 +1,355 @@
+{
+  "herroBanner": {
+    "title": "Du Lịch 9 Điểm Đến Nổi Tiếng Vùng Tây Bắc",
+    "subtitle": "Gợi Ý Chuyến Đi",
+    "items": [
+      {
+        "title": "Năm Kinh Nghiệm",
+        "value": 10
+      },
+      {
+        "title": "Khách Hàng",
+        "value": 2000
+      },
+      {
+        "title": "Chuyến Đi",
+        "value": 500
+      }
+    ],
+    "background": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/17090722.herro-banner-video.mp4"
+  },
+  "about": [
+    {
+      "title": "Công Ty Việt Nam",
+      "description": "Trụ sở tại Hà Nội, bạn sẽ gặp trực tiếp những người đứng sau chuyến đi của mình – không qua trung gian, không phụ phí. Chọn công ty địa phương đồng nghĩa với dịch vụ tốt hơn và đóng góp trở lại cho nơi bạn khám phá.",
+      "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10112633.home-about-1.png"
+    },
+    {
+      "title": "Đội Ngũ Luôn Sẵn Sàng",
+      "description": "Các tư vấn viên và hướng dẫn viên — thông thạo tiếng Pháp và giàu kinh nghiệm — cùng hệ thống hậu cần trơn tru, sẽ mang đến mọi nguồn lực cần thiết để đảm bảo thành công.",
+      "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10112647.home-about-2.png"
+    },
+    {
+      "title": "Chuyên Gia Địa Phương",
+      "description": "Với hiểu biết sâu sắc về điểm đến và văn hóa bản địa, Vietnam Exploration mang đến những hành trình vượt ngoài việc tham quan — kết nối bạn với con người nơi đây.",
+      "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10112718.home-about-3.png"
+    }
+  ],
+  "destination": {
+    "title": "Điểm Đến 3 Miền",
+    "items": [
+      {
+        "title": "Miền Bắc",
+        "description": "Vùng cực Bắc trên bản đồ Việt Nam, với thủ đô Hà Nội",
+        "video": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4"
+      },
+      {
+        "title": "Miền Trung",
+        "description": "Vùng miền Trung Việt Nam, nổi bật với di sản văn hóa và cảnh quan đa dạng",
+        "video":"https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4"
+      },
+      {
+        "title": "Miền Nam",
+        "description": "Vùng cực Nam của Việt Nam, năng động và giàu bản sắc văn hóa, với TP. Hồ Chí Minh",
+        "video": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+      }
+    ]
+  },
+  "tripsWeHad": [
+    {
+      "title": "Các chuyến đi",
+      "items": [
+        {
+          "title": "Đi Bộ Đường Dài",
+          "link": "/hiking",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085815.trip-1.jpg"
+        },
+        {
+          "title": "Xe Máy",
+          "link": "/motorbike",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085808.trip-2.jpg"
+        },
+        {
+          "title": "Gặp Gỡ Người Dân Bản Địa",
+          "link": "/meet-locals",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085748.trip-3.png"
+        },
+        {
+          "title": "Ô Tô",
+          "link": "/car",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085812.trip-4.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Gợi ý",
+      "items": [
+        {
+          "title": "Đi Bộ Đường Dài",
+          "link": "/hiking",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085815.trip-1.jpg"
+        },
+        {
+          "title": "Gặp Gỡ Người Dân Bản Địa",
+          "link": "/meet-locals",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085748.trip-3.png"
+        }
+      ]
+    },
+    {
+      "title": "Chuyến đi kết hợp",
+      "items": [
+        {
+          "title": "Xe Máy",
+          "link": "/motorbike",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20085808.trip-2.jpg"
+        }
+      ]
+    }
+  ],
+  "testimonial": {
+    "title": "Customer Feedback",
+    "items": [
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      },
+      {
+        "name": "Lana Meo",
+        "description": "Chuyến đi này thực sự khó quên. Từ những đỉnh núi Ta Xua phủ mây cho đến các khu chợ địa phương đầy màu sắc, tôi đã khám phá cảnh quan tuyệt đẹp và những con người hiếu khách. Mỗi nơi mang lại những kỷ niệm riêng, một hành trình ý nghĩa cùng Vietnam Exploration.",
+        "avatar": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155537.testimonial-1.png",
+        "rating": 4,
+        "country": "Mexico",
+        "gallery": {
+          "images": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155614.testimonial-1-1.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155558.testimonial-1-2.jpg",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155546.testimonial-1-3.png",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/20155606.testimonial-1-4.jpg"
+          ],
+          "videos": [
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/10/10162913.destination-1.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19113956.destination-2.mp4",
+            "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+          ]
+        }
+      }
+    ]
+  }
+}

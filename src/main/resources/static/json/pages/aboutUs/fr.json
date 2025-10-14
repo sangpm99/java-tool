@@ -1,0 +1,28 @@
+{
+  "HerroBanner": {
+    "Title": "Vietnam Exploration",
+    "YearsExpertiseTitle": "Années d’Expérience",
+    "YearsExpertiseValue": "10",
+    "YearsExpertiseDuration": "1",
+    "CustomersTitle": "Clients",
+    "CustomersValue": "2000",
+    "CustomersDuration": "3",
+    "TripsTitle": "Voyages",
+    "TripsValue": "500",
+    "TripsDuration": "2",
+    "Background": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+  },
+  "About": {
+    "Title": "Explorer la géographie touristique locale du Vietnam",
+    "Paragraphs": [
+      "Vietnam Exploration est une agence de voyages qui crée des séjours sur mesure à travers tout le Vietnam — des circuits en moto ou en voiture aux aventures de trekking.",
+      "Fondée par des guides passionnés et expérimentés, nous vous proposons des expériences uniques pour découvrir le Vietnam autrement et rencontrer les habitants.",
+      "Avec Vietnam Exploration, vous avez un compagnon de confiance pour vos vacances au Vietnam."
+    ],
+    "Images": [
+      "https://storage.googleapis.com/2hglobalstore/upload/2025/10/04155904.about-us-1.png",
+      "https://storage.googleapis.com/2hglobalstore/upload/2025/10/04155925.about-us-2.jpg",
+      "https://storage.googleapis.com/2hglobalstore/upload/2025/10/04155927.about-us-3.jpg"
+    ]
+  }
+}

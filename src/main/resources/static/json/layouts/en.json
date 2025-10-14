@@ -1,0 +1,112 @@
+{
+  "header": {
+    "logo": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/09134515.logo.png",
+    "navbar": {
+      "aboutUs": {
+        "title": "About Us",
+        "to": "about-us"
+      },
+      "destination": {
+        "title": "Destination",
+        "children": [
+          {
+            "title": "Content",
+            "to": "destination/content-1"
+          },
+          {
+            "title": "Content",
+            "to": "destination/content-2"
+          },
+          {
+            "title": "Content",
+            "to": "destination/content-3"
+          }
+        ]
+      },
+      "tripsWeHad": {
+        "title": "Trips We Had",
+        "children": [
+          {
+            "title": "Content",
+            "to": "trips-we-had/content-1"
+          },
+          {
+            "title": "Content",
+            "to": "trips-we-had/content-2"
+          },
+          {
+            "title": "Content",
+            "to": "trips-we-had/content-3"
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "Testimonials",
+        "children": [
+          {
+            "title": "Content",
+            "to": "testimonials/content-1"
+          },
+          {
+            "title": "Content",
+            "to": "testimonials/content-2"
+          },
+          {
+            "title": "Content",
+            "to": "testimonials/content-3"
+          }
+        ]
+      },
+      "handBook": {
+        "title": "HandBook",
+        "children": [
+          {
+            "title": "Content",
+            "to": "handBook/content-1"
+          },
+          {
+            "title": "Content",
+            "to": "handBook/content-2"
+          },
+          {
+            "title": "Content",
+            "to": "handBook/content-3"
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "title": "Vietnam Exploration Travel",
+    "email": "info@vietnamexploration.com",
+    "phoneLabel": "(+84) 242 242 1212",
+    "phoneNumber": "+842422421212",
+    "address": "11/67 alliée 06, rue Mieu Nha, district de Nam Tu Liem, Hanoi"
+  },
+  "absoluteFooter": {
+    "title": "2025 Vietnam Exploration",
+    "menu": {
+      "cgv": "CGV",
+      "mentionsLesgales": "Mentions lesgales",
+      "privacyPolicy": "Privacy Policy",
+      "contact": "Contact"
+    },
+    "menuActions": {
+      "tripadvisor": "https://www.tripadvisor.com/",
+      "petitfute": "https://www.petitfute.com/",
+      "whatApp": "https://www.whatsapp.com/"
+    }
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/",
+    "google": "https://www.google.com/",
+    "instagram": "https://www.instagram.com/",
+    "youtube": "https://www.youtube.com/"
+  },
+  "form": {
+    "register": {
+      "emailHolder": "Enter your e-mail address",
+      "submit": "Subscribe"
+    }
+  }
+}

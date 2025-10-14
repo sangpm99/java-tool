@@ -1,0 +1,112 @@
+{
+  "header":  {
+    "logo": "https://storage.googleapis.com/2hglobalstore/upload/2025/10/09134515.logo.png",
+    "navbar": {
+      "aboutUs": {
+        "title": "Về Chúng Tôi",
+        "to": "about-us"
+      },
+      "destination": {
+        "title": "Điểm Đến",
+        "children": [
+          {
+            "title": "Nội Dung",
+            "to": "destination/content-1"
+          },
+          {
+            "title": "Nội Dung",
+            "to": "destination/content-2"
+          },
+          {
+            "title": "Nội Dung",
+            "to": "destination/content-3"
+          }
+        ]
+      },
+      "tripsWeHad": {
+        "title": "Chuyến Đi",
+        "children": [
+          {
+            "title": "Nội Dung",
+            "to": "trips-we-had/content-1"
+          },
+          {
+            "title": "Nội Dung",
+            "to": "trips-we-had/content-2"
+          },
+          {
+            "title": "Nội Dung",
+            "to": "trips-we-had/content-3"
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "Cảm Nhận",
+        "children": [
+          {
+            "title": "Nội Dung",
+            "to": "testimonials/content-1"
+          },
+          {
+            "title": "Nội Dung",
+            "to": "testimonials/content-2"
+          },
+          {
+            "title": "Nội Dung",
+            "to": "testimonials/content-3"
+          }
+        ]
+      },
+      "handBook": {
+        "title": "Sổ Tay",
+        "children": [
+          {
+            "title": "Nội Dung",
+            "to": "handBook/content-1"
+          },
+          {
+            "title": "Nội Dung",
+            "to": "handBook/content-2"
+          },
+          {
+            "title": "Nội Dung",
+            "to": "handBook/content-3"
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "title": "Vietnam Exploration Travel",
+    "email": "info@vietnamexploration.com",
+    "phoneLabel": "(+84) 242 242 1212",
+    "phoneNumber": "+842422421212",
+    "address": "Số 11/67, ngõ 06, đường Miếu Nhà, quận Nam Từ Liêm, Hà Nội"
+  },
+  "absoluteFooter": {
+    "title": "2025 Vietnam Exploration",
+    "menu": {
+      "cgv": "CGV",
+      "mentionsLesgales": "Thông Tin Pháp Lý",
+      "privacyPolicy": "Chính Sách Bảo Mật",
+      "contact": "Liên Hệ"
+    },
+    "menuActions": {
+      "tripadvisor": "https://www.tripadvisor.com/",
+      "petitfute": "https://www.petitfute.com/",
+      "whatApp": "https://www.whatsapp.com/"
+    }
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/",
+    "google": "https://www.google.com/",
+    "instagram": "https://www.instagram.com/",
+    "youtube": "https://www.youtube.com/"
+  },
+  "form": {
+    "register": {
+      "emailHolder": "Nhập địa chỉ email của bạn",
+      "submit": "Đăng ký"
+    }
+  }
+}

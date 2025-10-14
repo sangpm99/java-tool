@@ -1,0 +1,28 @@
+{
+  "HerroBanner": {
+    "Title1": "Vietnam Exploration",
+    "YearsExpertiseTitle": "Năm Kinh Nghiệm",
+    "YearsExpertiseValue": "10",
+    "YearsExpertiseDuration": "1",
+    "CustomersTitle": "Khách Hàng",
+    "CustomersValue": "2000",
+    "CustomersDuration": "3",
+    "TripsTitle": "Chuyến Đi",
+    "TripsValue": "500",
+    "TripsDuration": "2",
+    "Background": "https://storage.googleapis.com/2hglobalstore/upload/2025/09/19114200.destination-3.mp4"
+  },
+  "About": {
+    "Title": "Khám phá địa lý du lịch địa phương Việt Nam",
+    "Paragraphs": [
+      "Vietnam Exploration là công ty du lịch chuyên tạo ra những hành trình thiết kế riêng trên khắp Việt Nam — từ chuyến đi bằng xe máy, ô tô cho đến các chuyến trekking.",
+      "Được thành lập bởi những hướng dẫn viên giàu kinh nghiệm và đầy đam mê, chúng tôi mang đến những trải nghiệm độc đáo để bạn khám phá Việt Nam theo cách khác biệt và kết nối với người dân địa phương.",
+      "Với Vietnam Exploration, bạn có một người bạn đồng hành tin cậy cho kỳ nghỉ tại Việt Nam."
+    ],
+    "Images": [
+      "https://storage.googleapis.com/2hglobalstore/upload/2025/10/04155904.about-us-1.png",
+      "https://storage.googleapis.com/2hglobalstore/upload/2025/10/04155925.about-us-2.jpg",
+      "https://storage.googleapis.com/2hglobalstore/upload/2025/10/04155927.about-us-3.jpg"
+    ]
+  }
+}
