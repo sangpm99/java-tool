@@ -17,7 +17,7 @@ public class ProductCategory {
     @Column(nullable = false)
     private String name;
 
-    @ManyToMany(mappedBy = "likedProductCategories") // không cần khai báo JoinTable nữa vì khai báo bên Product rồi, chỉ cần map
+    @ManyToMany(mappedBy = "productCategories") // không cần khai báo JoinTable nữa vì khai báo bên Product rồi, chỉ cần map
     @JsonBackReference
     private Set<Product> likes;
 
