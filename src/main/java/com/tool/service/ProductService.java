@@ -1,12 +1,13 @@
 package com.tool.service;
 
+import com.tool.dto.PagedResponse;
+import com.tool.dto.product.CreateProductsRequest;
 import com.tool.dto.product.GetProductsRequest;
 import com.tool.dto.ProductRequest;
 import com.tool.model.Product;
 import com.tool.model.ProductCategory;
 import com.tool.repository.ProductRepository;
 
-import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 
@@ -15,37 +16,69 @@ import com.tool.repository.ProductCategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
-import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class ProductService {
-    private final EntityManager entityManager;
 
     @Autowired
     private ProductRepository productRepository;
     @Autowired
     private ProductCategoryRepository productCategoryRepository;
 
-    // get all
-    public List<Product> getProducts(GetProductsRequest request) {
-        return productRepository.findAll();
+    // hàm bổ trợ cho get all
+    public List<Product> getProducts(String searchValue, List<Long> categoryIds, int limit) {
+        if (categoryIds == null || categoryIds.isEmpty()) {
+            // Nếu không có category → query khác, bỏ phần IN
+            return productRepository.findRandomProductsWithoutCategory(searchValue, limit);
+        }
+        return productRepository.findRandomProductsByCategories(searchValue, categoryIds, limit);
     }
 
-    public List<Product> getProducts(Set<Long> ids) {
-        String jpql = """
-            SELECT DISTINCT p
-            FROM Product p
-            JOIN p.productCategories c
-            WHERE c.id IN :ids
-        """;
+    // get all
+    public PagedResponse<Product> getProducts(GetProductsRequest request) {
+        // 1. Lấy các tham số từ request
+        String searchValue = request.getSearchValue();
+        Integer pageSize = (request.getPageSize() != null && request.getPageSize() > 0) 
+                   ? request.getPageSize() 
+                   : 20;
+        List<Long> productCategoryIds = request.getProductCategoryIds();
 
-        return entityManager.createQuery(jpql, Product.class)
-                .setParameter("ids", ids)
-                .getResultList();
+        // 2. Lấy 20 sản phẩm random lọc searchValue & category
+        List<Product> products = getProducts(searchValue, productCategoryIds, pageSize);
+
+        // 3. Đếm số lượng sản phẩm trong bảng
+        long totalCount = productRepository.countSimpleAndVariableProducts();
+
+        // 6. Xử lý variable -> chèn variation ngay sau
+        List<Product> finalProducts = new ArrayList<>();
+        for (Product p : products) {
+            finalProducts.add(p);
+            if ("variable".equals(p.getType())) {
+                String parentValue = "id:" + p.getId();
+                List<Product> variations = productRepository.findAll((root, query, cb) ->
+                    cb.and(
+                        cb.equal(root.get("type"), "variation"),
+                        cb.equal(root.get("parent"), parentValue)
+                    )
+                );
+                finalProducts.addAll(variations);
+            }
+        }
+
+        PagedResponse<Product> response = new PagedResponse<>(
+            pageSize,
+            totalCount,
+            finalProducts,
+            ""
+        );
+
+        return response;
     }
 
     // get one
@@ -54,100 +87,132 @@ public class ProductService {
     }
 
     // create
-    public void createProduct (ProductRequest body) {
-        Set<Long> productCategoryIds = body.getProductCategoryIds();
+    public void createProduct (CreateProductsRequest body) {
+        List<ProductRequest> products = body.getProducts();
 
-        Product product = new Product(
-            body.getType(),
-            body.getSku(),
-            body.getGtin(),
-            body.getName(),
-            body.getPublished(),
-            body.getIsFeatured(),
-            body.getVisibilityInCatalog(),
-            body.getShortDescription(),
-            body.getDescription(),
-            body.getDateSalePriceStarts(),
-            body.getDateSalePriceEnds(),
-            body.getTaxStatus(),
-            body.getTaxClass(),
-            body.getInStock(),
-            body.getStock(),
-            body.getLowStockAmount(),
-            body.getBackordersAllowed(),
-            body.getSoldIndividually(),
-            body.getWeight(),
-            body.getLength(),
-            body.getWidth(),
-            body.getHeight(),
-            body.getAllowCustomerReviews(),
-            body.getPurchaseNote(),
-            body.getSalePrice(),
-            body.getRegularPrice(),
-            body.getCategories(),
-            body.getTags(),
-            body.getShippingClass(),
-            body.getImages(),
-            body.getDownloadLimit(),
-            body.getDownloadExpiryDays(),
-            body.getParent(),
-            body.getGroupedProducts(),
-            body.getUpsells(),
-            body.getCrossSells(),
-            body.getExternalURL(),
-            body.getButtonText(),
-            body.getPosition(),
-            body.getBrands(),
-            body.getAttribute1Name(),
-            body.getAttribute1Value(),
-            body.getAttribute1Visible(),
-            body.getAttribute1Global(),
-            body.getAttribute2Name(),
-            body.getAttribute2Value(),
-            body.getAttribute2Visible(),
-            body.getAttribute2Global(),
-            body.getAttribute3Name(),
-            body.getAttribute3Value(),
-            body.getAttribute3Visible(),
-            body.getAttribute3Global(),
-            body.getAttribute4Name(),
-            body.getAttribute4Value(),
-            body.getAttribute4Visible(),
-            body.getAttribute4Global(),
-            body.getAttribute5Name(),
-            body.getAttribute5Value(),
-            body.getAttribute5Visible(),
-            body.getAttribute5Global(),
-            body.getAttribute6Name(),
-            body.getAttribute6Value(),
-            body.getAttribute6Visible(),
-            body.getAttribute6Global(),
-            body.getAttribute7Name(),
-            body.getAttribute7Value(),
-            body.getAttribute7Visible(),
-            body.getAttribute7Global(),
-            body.getAttribute8Name(),
-            body.getAttribute8Value(),
-            body.getAttribute8Visible(),
-            body.getAttribute8Global(),
-            body.getAttribute9Name(),
-            body.getAttribute9Value(),
-            body.getAttribute9Visible(),
-            body.getAttribute9Global()
-        );
+        Product parentVariable = null;
 
-        Set<ProductCategory> productCategories = new HashSet<>();
-        for (Long categoryId : productCategoryIds) {
-            Optional<ProductCategory> optionalCategory = productCategoryRepository.findById(categoryId);
+        for(ProductRequest p: products) {
+            Product product = new Product(
+                p.getType(),
+                p.getSku(),
+                p.getGtin(),
+                p.getName(),
+                p.getPublished(),
+                p.getIsFeatured(),
+                p.getVisibilityInCatalog(),
+                p.getShortDescription(),
+                p.getDescription(),
+                p.getDateSalePriceStarts(),
+                p.getDateSalePriceEnds(),
+                p.getTaxStatus(),
+                p.getTaxClass(),
+                p.getInStock(),
+                p.getStock(),
+                p.getLowStockAmount(),
+                p.getBackordersAllowed(),
+                p.getSoldIndividually(),
+                p.getWeight(),
+                p.getLength(),
+                p.getWidth(),
+                p.getHeight(),
+                p.getAllowCustomerReviews(),
+                p.getPurchaseNote(),
+                p.getSalePrice(),
+                p.getRegularPrice(),
+                p.getCategories(),
+                p.getTags(),
+                p.getShippingClass(),
+                p.getImages(),
+                p.getDownloadLimit(),
+                p.getDownloadExpiryDays(),
+                p.getParent(),
+                p.getGroupedProducts(),
+                p.getUpsells(),
+                p.getCrossSells(),
+                p.getExternalURL(),
+                p.getButtonText(),
+                p.getPosition(),
+                p.getBrands(),
+                p.getAttribute1Name(),
+                p.getAttribute1Value(),
+                p.getAttribute1Visible(),
+                p.getAttribute1Global(),
+                p.getAttribute2Name(),
+                p.getAttribute2Value(),
+                p.getAttribute2Visible(),
+                p.getAttribute2Global(),
+                p.getAttribute3Name(),
+                p.getAttribute3Value(),
+                p.getAttribute3Visible(),
+                p.getAttribute3Global(),
+                p.getAttribute4Name(),
+                p.getAttribute4Value(),
+                p.getAttribute4Visible(),
+                p.getAttribute4Global(),
+                p.getAttribute5Name(),
+                p.getAttribute5Value(),
+                p.getAttribute5Visible(),
+                p.getAttribute5Global(),
+                p.getAttribute6Name(),
+                p.getAttribute6Value(),
+                p.getAttribute6Visible(),
+                p.getAttribute6Global(),
+                p.getAttribute7Name(),
+                p.getAttribute7Value(),
+                p.getAttribute7Visible(),
+                p.getAttribute7Global(),
+                p.getAttribute8Name(),
+                p.getAttribute8Value(),
+                p.getAttribute8Visible(),
+                p.getAttribute8Global(),
+                p.getAttribute9Name(),
+                p.getAttribute9Value(),
+                p.getAttribute9Visible(),
+                p.getAttribute9Global()
+            );
 
-            if (optionalCategory.isPresent()) {
-                ProductCategory category = optionalCategory.get();
-                productCategories.add(category);
+            if("variable".equals(product.getType())) {
+                Set<Long> productCategoryIds = p.getProductCategoryIds();
+                Set<ProductCategory> productCategories = new HashSet<>();
+                for (Long categoryId : productCategoryIds) {
+                    Optional<ProductCategory> optionalCategory = productCategoryRepository.findById(categoryId);
+
+                    if (optionalCategory.isPresent()) {
+                        ProductCategory category = optionalCategory.get();
+                        productCategories.add(category);
+                    }
+                }
+
+                product.setProductCategories(productCategories);
+                parentVariable = productRepository.save(product);
+            }
+
+            else if ("variation".equals(product.getType())) {
+                if(parentVariable == null) {
+                    throw new RuntimeException("Cannot create variation without a variable parent");
+                }
+                product.setParent("id:" + parentVariable.getId());
+                productRepository.save(product);
+            }
+
+            // nếu là simple hoặc gì khác save bình thường
+            else {
+                Set<Long> productCategoryIds = p.getProductCategoryIds();
+                Set<ProductCategory> productCategories = new HashSet<>();
+                for (Long categoryId : productCategoryIds) {
+                    Optional<ProductCategory> optionalCategory = productCategoryRepository.findById(categoryId);
+
+                    if (optionalCategory.isPresent()) {
+                        ProductCategory category = optionalCategory.get();
+                        productCategories.add(category);
+                    }
+                }
+
+                product.setProductCategories(productCategories);
+                productRepository.save(product);
             }
         }
-
-        product.setProductCategories(productCategories);
-        productRepository.save(product);
     }
 
     // update
@@ -334,8 +399,16 @@ public class ProductService {
 
     // delete
     public void deleteProduct (Long id) {
-        Product existing = productRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Product not found with id: " + id));
+        Product existing = productRepository.findById(id)
+        .orElseThrow(() -> new EntityNotFoundException("Product not found with id: " + id));
 
+        // Nếu là variable thì xóa luôn các variation có parent = "id:<id>"
+        if ("variable".equals(existing.getType())) {
+            String parentValue = "id:" + id;
+            productRepository.deleteVariationsByParent(parentValue);
+        }
+
+        // Xóa product chính
         productRepository.delete(existing);
     }
 }

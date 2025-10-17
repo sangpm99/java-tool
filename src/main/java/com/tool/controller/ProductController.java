@@ -1,14 +1,14 @@
 package com.tool.controller;
 
 import com.tool.dto.product.GetProductsRequest;
+import com.tool.dto.product.CreateProductsRequest;
+import com.tool.dto.PagedResponse;
 import com.tool.dto.ProductRequest;
 import com.tool.model.Product;
 import com.tool.service.ProductService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/Product")
@@ -17,10 +17,8 @@ public class ProductController {
   private ProductService productService;
 
   @GetMapping("/GetProducts")
-  public List<Product> getProducts(
-    @RequestParam(required = false) String searchValue
-  ) {
-    return this.productService.getProducts(searchValue);
+  public PagedResponse<Product> getProducts(GetProductsRequest body) {
+    return this.productService.getProducts(body);
   }
 
   @GetMapping("/GetProduct/{id}")
@@ -29,7 +27,7 @@ public class ProductController {
   }
 
   @PostMapping("/CreateProduct")
-  public void createProduct(@RequestBody ProductRequest body) {
+  public void createProduct(@RequestBody CreateProductsRequest body) {
     this.productService.createProduct(body);
   }
 
