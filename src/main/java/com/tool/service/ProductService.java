@@ -98,8 +98,8 @@ public class ProductService {
                 p.getSku(),
                 p.getGtin(),
                 p.getName(),
-                p.getPublished(),
-                p.getIsFeatured(),
+                p.getPublished() != null ? Integer.valueOf(p.getPublished()) : null,
+                p.getIsFeatured() != null ? Integer.valueOf(p.getIsFeatured()) : null,
                 p.getVisibilityInCatalog(),
                 p.getShortDescription(),
                 p.getDescription(),
@@ -107,69 +107,69 @@ public class ProductService {
                 p.getDateSalePriceEnds(),
                 p.getTaxStatus(),
                 p.getTaxClass(),
-                p.getInStock(),
-                p.getStock(),
-                p.getLowStockAmount(),
-                p.getBackordersAllowed(),
-                p.getSoldIndividually(),
-                p.getWeight(),
-                p.getLength(),
-                p.getWidth(),
-                p.getHeight(),
-                p.getAllowCustomerReviews(),
+                p.getInStock() != null ? Integer.valueOf(p.getInStock()) : null,
+                p.getStock() != null ? Integer.valueOf(p.getStock()) : null,
+                p.getLowStockAmount() != null ? Integer.valueOf(p.getLowStockAmount()) : null,
+                p.getBackordersAllowed() != null ? Integer.valueOf(p.getBackordersAllowed()) : null,
+                p.getSoldIndividually() != null ? Integer.valueOf(p.getSoldIndividually()) : null,
+                p.getWeight() != null ? Integer.valueOf(p.getWeight()) : null,
+                p.getLength() != null ? Integer.valueOf(p.getLength()) : null,
+                p.getWidth() != null ? Integer.valueOf(p.getWidth()) : null,
+                p.getHeight() != null ? Integer.valueOf(p.getHeight()) : null,
+                p.getAllowCustomerReviews() != null ? Integer.valueOf(p.getAllowCustomerReviews()) : null,
                 p.getPurchaseNote(),
-                p.getSalePrice(),
-                p.getRegularPrice(),
+                p.getSalePrice() != null ? Integer.valueOf(p.getSalePrice()) : null,
+                p.getRegularPrice() != null ? Integer.valueOf(p.getRegularPrice()) : null,
                 p.getCategories(),
                 p.getTags(),
                 p.getShippingClass(),
                 p.getImages(),
                 p.getDownloadLimit(),
-                p.getDownloadExpiryDays(),
+                p.getDownloadExpiryDays() != null ? Integer.valueOf(p.getDownloadExpiryDays()) : null,
                 p.getParent(),
                 p.getGroupedProducts(),
                 p.getUpsells(),
                 p.getCrossSells(),
                 p.getExternalURL(),
                 p.getButtonText(),
-                p.getPosition(),
+                p.getPosition() != null ? Integer.valueOf(p.getPosition()) : null,
                 p.getBrands(),
                 p.getAttribute1Name(),
                 p.getAttribute1Value(),
-                p.getAttribute1Visible(),
-                p.getAttribute1Global(),
+                p.getAttribute1Visible() != null ? Integer.valueOf(p.getAttribute1Visible()) : null,
+                p.getAttribute1Global() != null ? Integer.valueOf(p.getAttribute1Global()) : null,
                 p.getAttribute2Name(),
                 p.getAttribute2Value(),
-                p.getAttribute2Visible(),
-                p.getAttribute2Global(),
+                p.getAttribute2Visible() != null ? Integer.valueOf(p.getAttribute2Visible()) : null,
+                p.getAttribute2Global() != null ? Integer.valueOf(p.getAttribute2Global()) : null,
                 p.getAttribute3Name(),
                 p.getAttribute3Value(),
-                p.getAttribute3Visible(),
-                p.getAttribute3Global(),
+                p.getAttribute3Visible() != null ? Integer.valueOf(p.getAttribute3Visible()) : null,
+                p.getAttribute3Global() != null ? Integer.valueOf(p.getAttribute3Global()) : null,
                 p.getAttribute4Name(),
                 p.getAttribute4Value(),
-                p.getAttribute4Visible(),
-                p.getAttribute4Global(),
+                p.getAttribute4Global() != null ? Integer.valueOf(p.getAttribute4Global()) : null,
+                p.getAttribute4Visible() != null ? Integer.valueOf(p.getAttribute4Visible()) : null,
                 p.getAttribute5Name(),
                 p.getAttribute5Value(),
-                p.getAttribute5Visible(),
-                p.getAttribute5Global(),
+                p.getAttribute5Visible() != null ? Integer.valueOf(p.getAttribute5Visible()) : null,
+                p.getAttribute5Global() != null ? Integer.valueOf(p.getAttribute5Global()) : null,
                 p.getAttribute6Name(),
                 p.getAttribute6Value(),
-                p.getAttribute6Visible(),
-                p.getAttribute6Global(),
+                p.getAttribute6Visible() != null ? Integer.valueOf(p.getAttribute6Visible()) : null,
+                p.getAttribute6Global() != null ? Integer.valueOf(p.getAttribute6Global()) : null,
                 p.getAttribute7Name(),
                 p.getAttribute7Value(),
-                p.getAttribute7Visible(),
-                p.getAttribute7Global(),
+                p.getAttribute7Visible() != null ? Integer.valueOf(p.getAttribute7Visible()) : null,
+                p.getAttribute7Global() != null ? Integer.valueOf(p.getAttribute7Global()) : null,
                 p.getAttribute8Name(),
                 p.getAttribute8Value(),
-                p.getAttribute8Visible(),
-                p.getAttribute8Global(),
+                p.getAttribute8Visible() != null ? Integer.valueOf(p.getAttribute8Visible()) : null,
+                p.getAttribute8Global() != null ? Integer.valueOf(p.getAttribute8Global()) : null,
                 p.getAttribute9Name(),
                 p.getAttribute9Value(),
-                p.getAttribute9Visible(),
-                p.getAttribute9Global()
+                p.getAttribute9Visible() != null ? Integer.valueOf(p.getAttribute9Visible()) : null,
+                p.getAttribute9Global() != null ? Integer.valueOf(p.getAttribute9Global()) : null
             );
 
             if("variable".equals(product.getType())) {
@@ -216,94 +216,94 @@ public class ProductService {
     }
 
     // update
-    public void updateProduct (Long id, ProductRequest body) {
+    public void updateProduct (Long id, ProductRequest p) {
         Product existing = productRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Product not found with id: " + id));
 
-        String type = body.getType();
-        String sku = body.getSku();
-        String gtin = body.getGtin();
-        String name = body.getName();
-        Integer published = body.getPublished();
-        Integer isFeatured = body.getIsFeatured();
-        String visibilityInCatalog = body.getVisibilityInCatalog();
-        String shortDescription = body.getShortDescription();
-        String description = body.getDescription();
-        String dateSalePriceStarts = body.getDateSalePriceStarts();
-        String dateSalePriceEnds = body.getDateSalePriceEnds();
-        String taxStatus = body.getTaxStatus();
-        String taxClass = body.getTaxClass();
-        Integer inStock = body.getInStock();
-        Integer stock = body.getStock();
-        Integer lowStockAmount = body.getLowStockAmount();
-        Integer backordersAllowed = body.getBackordersAllowed();
-        Integer soldIndividually = body.getSoldIndividually();
-        Integer weight = body.getWeight();
-        Integer length = body.getLength();
-        Integer width = body.getWidth();
-        Integer height = body.getHeight();
-        Integer allowCustomerReviews = body.getAllowCustomerReviews();
-        String purchaseNote = body.getPurchaseNote();
-        Integer salePrice = body.getSalePrice();
-        Integer regularPrice = body.getRegularPrice();
-        String categories = body.getCategories();
-        String tags = body.getTags();
-        String shippingClass = body.getShippingClass();
-        String images = body.getImages();
-        String downloadLimit = body.getDownloadLimit();
-        Integer downloadExpiryDays = body.getDownloadExpiryDays();
-        String parent = body.getParent();
-        String groupedProducts = body.getGroupedProducts();
-        String upsells = body.getUpsells();
-        String crossSells = body.getCrossSells();
-        String externalURL = body.getExternalURL();
-        String buttonText = body.getButtonText();
-        Integer position = body.getPosition();
-        String brands = body.getBrands();
+        String type = p.getType();
+        String sku = p.getSku();
+        String gtin = p.getGtin();
+        String name = p.getName();
+        Integer published = p.getPublished() != null ? Integer.valueOf(p.getPublished()) : null;
+        Integer isFeatured = p.getIsFeatured() != null ? Integer.valueOf(p.getIsFeatured()) : null;
+        String visibilityInCatalog = p.getVisibilityInCatalog();
+        String shortDescription = p.getShortDescription();
+        String description = p.getDescription();
+        String dateSalePriceStarts = p.getDateSalePriceStarts();
+        String dateSalePriceEnds = p.getDateSalePriceEnds();
+        String taxStatus = p.getTaxStatus();
+        String taxClass = p.getTaxClass();
+        Integer inStock = p.getInStock() != null ? Integer.valueOf(p.getInStock()) : null;
+        Integer stock = p.getStock() != null ? Integer.valueOf(p.getStock()) : null;
+        Integer lowStockAmount = p.getLowStockAmount() != null ? Integer.valueOf(p.getLowStockAmount()) : null;
+        Integer backordersAllowed = p.getBackordersAllowed() != null ? Integer.valueOf(p.getBackordersAllowed()) : null;
+        Integer soldIndividually = p.getSoldIndividually() != null ? Integer.valueOf(p.getSoldIndividually()) : null;
+        Integer weight = p.getWeight() != null ? Integer.valueOf(p.getWeight()) : null;
+        Integer length = p.getLength() != null ? Integer.valueOf(p.getLength()) : null;
+        Integer width = p.getWidth() != null ? Integer.valueOf(p.getWidth()) : null;
+        Integer height = p.getHeight() != null ? Integer.valueOf(p.getHeight()) : null;
+        Integer allowCustomerReviews = p.getAllowCustomerReviews() != null ? Integer.valueOf(p.getAllowCustomerReviews()) : null;
+        String purchaseNote = p.getPurchaseNote();
+        Integer salePrice = p.getSalePrice() != null ? Integer.valueOf(p.getSalePrice()) : null;
+        Integer regularPrice = p.getRegularPrice() != null ? Integer.valueOf(p.getRegularPrice()) : null;
+        String categories = p.getCategories();
+        String tags = p.getTags();
+        String shippingClass = p.getShippingClass();
+        String images = p.getImages();
+        String downloadLimit = p.getDownloadLimit();
+        Integer downloadExpiryDays = p.getDownloadExpiryDays() != null ? Integer.valueOf(p.getDownloadExpiryDays()) : null;
+        String parent = p.getParent();
+        String groupedProducts = p.getGroupedProducts();
+        String upsells = p.getUpsells();
+        String crossSells = p.getCrossSells();
+        String externalURL = p.getExternalURL();
+        String buttonText = p.getButtonText();
+        Integer position = p.getPosition() != null ? Integer.valueOf(p.getPosition()) : null;
+        String brands = p.getBrands();
 
-        String attribute1Name = body.getAttribute1Name();
-        String attribute1Value = body.getAttribute1Value();
-        Integer attribute1Visible = body.getAttribute1Visible();
-        Integer attribute1Global = body.getAttribute1Global();
+        String attribute1Name = p.getAttribute1Name();
+        String attribute1Value = p.getAttribute1Value();
+        Integer attribute1Visible = p.getAttribute1Visible() != null ? Integer.valueOf(p.getAttribute1Visible()) : null;
+        Integer attribute1Global = p.getAttribute1Global() != null ? Integer.valueOf(p.getAttribute1Global()) : null;
 
-        String attribute2Name = body.getAttribute2Name();
-        String attribute2Value = body.getAttribute2Value();
-        Integer attribute2Visible = body.getAttribute2Visible();
-        Integer attribute2Global = body.getAttribute2Global();
+        String attribute2Name = p.getAttribute2Name();
+        String attribute2Value = p.getAttribute2Value();
+        Integer attribute2Visible = p.getAttribute2Visible() != null ? Integer.valueOf(p.getAttribute2Visible()) : null;
+        Integer attribute2Global = p.getAttribute2Global() != null ? Integer.valueOf(p.getAttribute2Global()) : null;
 
-        String attribute3Name = body.getAttribute3Name();
-        String attribute3Value = body.getAttribute3Value();
-        Integer attribute3Visible = body.getAttribute3Visible();
-        Integer attribute3Global = body.getAttribute3Global();
+        String attribute3Name = p.getAttribute3Name();
+        String attribute3Value = p.getAttribute3Value();
+        Integer attribute3Visible = p.getAttribute3Visible() != null ? Integer.valueOf(p.getAttribute3Visible()) : null;
+        Integer attribute3Global = p.getAttribute3Global() != null ? Integer.valueOf(p.getAttribute3Global()) : null;
 
-        String attribute4Name = body.getAttribute4Name();
-        String attribute4Value = body.getAttribute4Value();
-        Integer attribute4Visible = body.getAttribute4Visible();
-        Integer attribute4Global = body.getAttribute4Global();
+        String attribute4Name = p.getAttribute4Name();
+        String attribute4Value = p.getAttribute4Value();
+        Integer attribute4Visible = p.getAttribute4Visible() != null ? Integer.valueOf(p.getAttribute4Visible()) : null;
+        Integer attribute4Global = p.getAttribute4Global() != null ? Integer.valueOf(p.getAttribute4Global()) : null;
 
-        String attribute5Name = body.getAttribute5Name();
-        String attribute5Value = body.getAttribute5Value();
-        Integer attribute5Visible = body.getAttribute5Visible();
-        Integer attribute5Global = body.getAttribute5Global();
+        String attribute5Name = p.getAttribute5Name();
+        String attribute5Value = p.getAttribute5Value();
+        Integer attribute5Visible = p.getAttribute5Visible() != null ? Integer.valueOf(p.getAttribute5Visible()) : null;
+        Integer attribute5Global = p.getAttribute5Global() != null ? Integer.valueOf(p.getAttribute5Global()) : null;
 
-        String attribute6Name = body.getAttribute6Name();
-        String attribute6Value = body.getAttribute6Value();
-        Integer attribute6Visible = body.getAttribute6Visible();
-        Integer attribute6Global = body.getAttribute6Global();
+        String attribute6Name = p.getAttribute6Name();
+        String attribute6Value = p.getAttribute6Value();
+        Integer attribute6Visible = p.getAttribute6Visible() != null ? Integer.valueOf(p.getAttribute6Visible()) : null;
+        Integer attribute6Global = p.getAttribute6Global() != null ? Integer.valueOf(p.getAttribute6Global()) : null;
 
-        String attribute7Name = body.getAttribute7Name();
-        String attribute7Value = body.getAttribute7Value();
-        Integer attribute7Visible = body.getAttribute7Visible();
-        Integer attribute7Global = body.getAttribute7Global();
+        String attribute7Name = p.getAttribute7Name();
+        String attribute7Value = p.getAttribute7Value();
+        Integer attribute7Visible = p.getAttribute7Visible() != null ? Integer.valueOf(p.getAttribute7Visible()) : null;
+        Integer attribute7Global = p.getAttribute7Global() != null ? Integer.valueOf(p.getAttribute7Global()) : null;
 
-        String attribute8Name = body.getAttribute8Name();
-        String attribute8Value = body.getAttribute8Value();
-        Integer attribute8Visible = body.getAttribute8Visible();
-        Integer attribute8Global = body.getAttribute8Global();
+        String attribute8Name = p.getAttribute8Name();
+        String attribute8Value = p.getAttribute8Value();
+        Integer attribute8Visible = p.getAttribute8Visible() != null ? Integer.valueOf(p.getAttribute8Visible()) : null;
+        Integer attribute8Global = p.getAttribute8Global() != null ? Integer.valueOf(p.getAttribute8Global()) : null;
 
-        String attribute9Name = body.getAttribute9Name();
-        String attribute9Value = body.getAttribute9Value();
-        Integer attribute9Visible = body.getAttribute9Visible();
-        Integer attribute9Global = body.getAttribute9Global();
+        String attribute9Name = p.getAttribute9Name();
+        String attribute9Value = p.getAttribute9Value();
+        Integer attribute9Visible = p.getAttribute9Visible() != null ? Integer.valueOf(p.getAttribute9Visible()) : null;
+        Integer attribute9Global = p.getAttribute9Global() != null ? Integer.valueOf(p.getAttribute9Global()) : null;
 
         existing.setType(type);
         existing.setSku(sku);
@@ -382,7 +382,7 @@ public class ProductService {
         existing.setAttribute9Visible(attribute9Visible);
         existing.setAttribute9Global(attribute9Global);
 
-        Set<Long> productCategoryIds = body.getProductCategoryIds();
+        Set<Long> productCategoryIds = p.getProductCategoryIds();
         Set<ProductCategory> productCategories = new HashSet<>();
         for (Long categoryId : productCategoryIds) {
             Optional<ProductCategory> optionalCategory = productCategoryRepository.findById(categoryId);
